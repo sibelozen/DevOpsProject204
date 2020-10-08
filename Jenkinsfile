@@ -4,7 +4,7 @@ pipeline{
 
     environment {
         ECR_REGISTRY = "046402772087.dkr.ecr.us-east-1.amazonaws.com"
-        APP_REPO_NAME = "call-repo/phonebook-app"
+        APP_REPO_NAME = "sibel-repo/phonebook-app"
         AWS_REGION = "us-east-1"
         AWS_STACK_NAME = "Call-Phonebook-App-${BUILD_NUMBER}"
         CFN_KEYPAIR = "call.lp"
