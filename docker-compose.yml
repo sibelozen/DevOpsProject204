@@ -14,7 +14,7 @@ services:
             - source: table
               target: /docker-entrypoint-initdb.d/init.sql
         networks:
-            - soznetnet
+            - soznet
     app-server:
         image: "432482524148.dkr.ecr.us-east-1.amazonaws.com/sibel-repo/phonebook-app:latest"
         deploy:
