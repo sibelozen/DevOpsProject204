@@ -3,11 +3,11 @@ pipeline{
     agent { label "master" }
 
     environment {
-        ECR_REGISTRY = "046402772087.dkr.ecr.us-east-1.amazonaws.com"
+        ECR_REGISTRY = "432482524148.dkr.ecr.us-east-1.amazonaws.com"
         APP_REPO_NAME = "sibel-repo/phonebook-app"
         AWS_REGION = "us-east-1"
-        AWS_STACK_NAME = "Call-Phonebook-App-${BUILD_NUMBER}"
-        CFN_KEYPAIR = "call.lp"
+        AWS_STACK_NAME = "Sbl-Phonebook-App-${BUILD_NUMBER}"
+        CFN_KEYPAIR = "sibelnew"
         HOME_FOLDER = "/home/ec2-user"
         GIT_FOLDER = sh(script:'echo ${GIT_URL} | sed "s/.*\\///;s/.git$//"', returnStdout:true).trim()
         PATH=sh(script:"echo $PATH:/usr/local/bin", returnStdout:true).trim()
